@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+</head>
+<body>
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
+
+
+    <nav class="my-2 my-md-0 me-md-3">
+    <a class="p-2 text-dark" href="/">Лабы по КПП</a>
+    </nav>
+
+    <nav class="my-2 my-md-0 me-md-3">
+        <p class="h5 my-0 me-md-auto fw-normal">Лаба 1</p>
+
+    </nav>
+</header>
+
+<form action="/Laba1" method="post">
+    <div>Масса:  <input type="text" name="inputmass1" style="width: 150px" /></div>
+    <div>Скорость:  <input type="text" name="inputspeed1" style="width: 150px" /></div>
+    <div>Масса:  <input type="text" name="inputmass2" style="width: 150px" /></div>
+    <div>Скорость:  <input type="text" name="inputspeed2" style="width: 150px" /></div>
+    <div th:text="${message}"/></div><br>
+    <button type="submit">Посчитать</button>
+</form>
+
+</body>
+</html>
